@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/mui.min.js"></script>
+    <link href="js/mui.min.css" rel="stylesheet"/>
+    <script src="js/iscroll.js"></script>
+    <script src="js/zepto.min.js"></script>
+</head>
+<body style="background: #ffffff">
+<div class="top"></div>
+<!--<div class="search">-->
+    <!--<form action="" method="get">-->
+        <!--<input type="text">-->
+    <!--</form>-->
+<!--</div>-->
+<div class="biaoti">
+
+    <div>
+        <a href="index.html"> < </a>
+        <!--发现-->
+    </div>
+    <!--<div>社区</div>-->
+    <!--<div>关注</div>-->
+
+</div>
+<div class="kinds">
+    <div class="kind">
+        <a href="">
+            <img src="img/remen.jpg" alt="">
+            <p>热门</p>
+        </a>
+    </div>
+    <div class="kind kind2">
+        <a href="">
+            <img src="img/shipin.jpg" alt="">
+            <p>视频</p>
+        </a>
+    </div><div class="kind kind2">
+    <a href="">
+        <img src="img/meishi.jpg" alt="">
+        <p>美食菜谱</p>
+    </a>
+</div><div class="kind">
+    <a href="">
+        <img src="img/diy.jpg" alt="">
+        <p>手工DIY</p>
+    </a>
+</div><div class="kind">
+    <a href="">
+        <img src="img/chahua.jpg" alt="">
+        <p>插画绘画</p>
+    </a>
+</div><div class="kind">
+    <a href="">
+        <img src="img/jiaju.jpg" alt="">
+        <p>家居生活</p>
+    </a>
+</div><div class="kind">
+    <a href="">
+        <img src="img/lvxing.jpg" alt="">
+        <p>旅行</p>
+    </a>
+</div><div class="kind">
+    <a href="">
+        <img src="img/shishang.jpg" alt="">
+        <p>时尚街拍</p>
+    </a>
+</div><div class="kind">
+    <a href="">
+        <img src="img/meifa.jpg" alt="">
+        <p>美发造型</p>
+    </a>
+</div>
+    <div class="kind">
+        <a href="">
+            <img src="img/remen.jpg" alt="">
+            <p>热门</p>
+        </a>
+    </div><div class="kind">
+    <a href="">
+        <img src="img/remen.jpg" alt="">
+        <p>热门</p>
+    </a>
+</div><div class="kind">
+    <a href="">
+        <img src="img/remen.jpg" alt="">
+        <p>热门</p>
+    </a>
+</div>
+</div>
+
+</body>
+
+
+<script>
+    var width=document.documentElement.clientWidth;
+    var height=document.documentElement.clientHeight;
+    var scale;
+    function resize(originsize,type){
+        var type=type || "x";
+        if(type=="x"){
+            scale=width/originsize*100;
+        }
+        else if(type=="y"){
+            scale=height/originsize*100;
+        }
+        document.getElementsByTagName("html")[0].style.fontSize=scale+"px";
+
+    }
+    resize(750,"x")
+</script>
+</html>
