@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/font/iconfont.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/mui.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/iscroll.js"></script>
+    <script src="js/swiper.animate1.0.2.min.js"></script>
+    <!--<script src="js/swiper.jquery.min.js"></script>-->
+    <script src="js/swiper.min.js"></script>
+    <script src="js/zepto.js"></script>
+</head>
+<body style="background: white">
+<header id="header">
+    <!--<div class="top"></div>-->
+    <div class="nav">
+        <div class="iconfont search"></div>
+        <div class="one">ONE</div>
+        <a href="index.personal.html">
+            <div class="iconfont geren "></div>
+        </a>
+    </div>
+</header>
+
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="con">
+                <img src="img/home1.jpg" alt="">
+                <div class="sth">
+                    <p>VOL.111</p>
+                    <p>untitled & numbering_99作品</p>
+                </div>
+                <p>
+                    我们不肯探索自己本身的价值，我们过分看重他人在自己生命力的参与。于是，孤独不再美好，失去了他人，我们惶惑不安。 by 三毛
+                </p>
+                <div class="date">Fri 16 Dec.2016
+
+                </div>
+            </div>
+
+            <div class="home_b">
+                <div class="iconfont collect"></div>
+                <div class="iconfont share"></div>
+
+            </div>
+
+        </div>
+        <div class="swiper-slide">
+            <div class="con">
+                <img src="img/home2.jpg" alt="">
+                <div class="sth">
+                    <p>VOL.110</p>
+                    <p>祝福 & 邓杨浩嘉 作品</p>
+                </div>
+                <p>
+                    人的苦难，终会被我们在无数个肚子承受的夜里包裹起来，变成珍珠，择日择机，献给最爱的人。 from熊德启《这一切并没有那么糟》
+                </p>
+                <div class="date">Thur 15 Dec.2016
+
+                </div>
+            </div>
+
+            <div class="home_b">
+                <div class="iconfont collect"></div>
+                <div class="iconfont share"></div>
+
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="con">
+                <img src="img/home3.jpg" alt="">
+                <div class="sth">
+                    <p>VOL.109</p>
+                    <p>死亡诗社 & 狐狸狐狸鱼 作品</p>
+                </div>
+                <p>
+                    勇气并不是恐惧的缺席，而是生活中有比恐惧更重重要的东西。勇敢的人或许无法长生不死，但处处谨小慎微的人却从来没有真正活过。 from 《公主日记》
+                </p>
+                <div class="date">Wed 14 Dec.2016
+
+                </div>
+            </div>
+
+            <div class="home_b">
+                <div class="iconfont collect"></div>
+                <div class="iconfont share"></div>
+
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="con">
+                <img src="img/home1.jpg" alt="">
+                <div class="sth">
+                    <p>VOL.111</p>
+                    <p>untitled & numbering_99作品</p>
+                </div>
+                <p>
+                    我们不肯探索自己本身的价值，我们过分看重他人在自己生命力的参与。于是，孤独不再美好，失去了他人，我们惶惑不安。 by 三毛
+                </p>
+                <div class="date">Fri 16 Dec.2016
+
+                </div>
+            </div>
+
+            <div class="home_b">
+                <div class="iconfont collect"></div>
+                <div class="iconfont share"></div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<footer id="foot">
+    <a href="index.home.html">
+        <div class="iconfont home" style="color:#85ADD6;">
+            <span>首页</span>
+        </div>
+    </a>
+    <a href="index.reading.html">
+        <div class="iconfont icon02">
+            <span>阅读</span>
+        </div>
+    </a>
+    <a href="index.music.htmle">
+        <div class="iconfont music">
+            <span>音乐</span>
+        </div>
+    </a>
+    <a href="index.movie.html">
+        <div class="iconfont movie">
+            <span>电影</span>
+        </div>
+    </a>
+</footer>
+</body>
+
+
+<script>
+    var width=document.documentElement.clientWidth;
+    var height=document.documentElement.clientHeight;
+    var scale;
+    function resize(originsize,type){
+        var type=type || "x";
+        if(type=="x"){
+            scale=width/originsize*100;
+        }
+        else if(type=="y"){
+            scale=height/originsize*100;
+        }
+        document.getElementsByTagName("html")[0].style.fontSize=scale+"px";
+
+    }
+    resize(750,"x");
+
+    var swiper = new Swiper('.swiper-container');
+
+    myScroll = new IScroll('#wrapper', { mouseWheel: true });
+
+
+</script>
+</html>

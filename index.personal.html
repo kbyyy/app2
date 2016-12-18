@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/personal.css">
+</head>
+<body>
+<div class="bg bg-blur">
+
+</div>
+<div class="content">
+    <div class="login">
+        <a href="index.home.html">
+            返回
+        </a>
+        <p>登录</p>
+    </div>
+    <div class="con">
+        <form action="">
+            <div>用户名：<input type="text" name="name" value="请输入用户名"/>
+            </div>
+            <div>密&nbsp;码：<input type="password" name="pass" value="请输入密码"/>
+            </div>
+            <div><input type="submit" name="login" value="登录"/>
+                <input type="submit" name="rest" value="注册"/>
+            </div>
+
+        </form>
+
+    </div>
+
+
+
+
+</div>
+
+</body>
+
+
+<script>
+    var width=document.documentElement.clientWidth;
+    var height=document.documentElement.clientHeight;
+    var scale;
+    function resize(originsize,type){
+        var type=type || "x";
+        if(type=="x"){
+            scale=width/originsize*100;
+        }
+        else if(type=="y"){
+            scale=height/originsize*100;
+        }
+        document.getElementsByTagName("html")[0].style.fontSize=scale+"px";
+
+    }
+    resize(750,"x");
+</script>
+</html>

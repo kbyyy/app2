@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+}
+html,body,span,img{
+    margin:0;padding:0;
+    width: 100%;height: 100%;
+    background: white;border:0;
+}
+
+header{
+    position: absolute;
+    z-index: 2;
+    top: 0;left: 0;
+    width: 100%;
+    background: white;
+}
+.top{
+    width:100%;height: 0.5rem;
+    background: url("../img/top.jpg") no-repeat;
+    background-size: contain;
+}
+.nav{
+    width: 100%;height: 1rem;
+    display: flex;
+    line-height: 1rem;
+    justify-content:space-around;
+    font-size: 0.4rem;
+    border-bottom: 0.02rem solid #CBCCCE;
+}
+.nav .iconfont{
+    font-size: 0.4rem;
+}
+.search,.geren{
+    width: 33.33%;height: 100%;
+}
+.geren{
+    text-align: right;
+}
+
+
+
+footer{
+    width: 100%;height: 1.1rem;
+    position: absolute;bottom:0;left: 0;
+    background: white;
+    border-top: 0.02rem solid #D2D3D4;
+
+}
+footer div{
+    background: white;
+    width: 25%;height: 100%;
+    float: left;
+    font-size: 0.5rem;
+    text-align: center;
+}
+footer div:hover{
+    color:#85ADD6;
+}
+footer .iconfont{
+    font-size: 0.5rem;   color: #9B9B9B;
+    line-height: 1rem;
+}
+footer span{
+    position: absolute;  bottom: 0;
+    display: block;
+    width: 25%;
+    height: 0.4rem;
+    text-align: center;
+    line-height: 0.4rem;
+    font-size: 0.2rem;
+}
+
+.back{
+    display: block;
+    color:#959595;
+}
+.back p{
+    font-size: 0.34rem;
+    margin-left: -3.3rem;
+}
+
+

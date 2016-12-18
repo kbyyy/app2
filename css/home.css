@@ -1,0 +1,57 @@
+.swiper-container{
+    position: absolute;top:1rem;
+}
+.swiper-slide{
+    width: 100%;height: 100%;
+    position: absolute;
+    padding: 0.2rem 0.22rem 0;
+}
+.con{
+    width: 100%;
+    height: 9.12rem;
+    border: 0.02rem solid #EEEEEE;
+    padding-top: 0.2rem;
+    padding-left: 0.18rem;
+    padding-right: 0.18rem;
+
+}
+.con img{
+    width:100%;height: 4.99rem;
+    margin-bottom: 0.18rem;
+}
+.sth{
+    display: flex;justify-content: space-between;
+}
+.con .sth p{
+    font-size: 0.2rem;color:#999999;
+}
+.con>p{
+    font-size: 0.28rem;color: #1C1C1C;
+    line-height: 0.4rem;
+    margin-top: 0.4rem;
+}
+.con .date{
+    float: right;margin-top: 1.4rem;
+    font-size: 0.28rem;color:#939393;
+}
+.home_b{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding-right: 0.18rem;
+}
+.home_b div{
+    float: right;height: 0.4rem;
+}
+.home_b .iconfont{
+    font-size: 0.4rem;color:#A0A0A0;
+    line-height: 0.4rem;
+}
+.home .collect{
+    font-size: 0.5rem;
+}
+.iconfont:hover{
+    color: #00A0E8;
+}
+
+

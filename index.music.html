@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/mui.css">
+
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/music.css">
+    <link rel="stylesheet" href="css/font/iconfont.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/iscroll.js"></script>
+    <script src="js/swiper.animate1.0.2.min.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/zepto.js"></script>
+</head>
+<body style="background: white">
+
+<header>
+    <div class="nav">
+        <div class="iconfont search"></div>
+        <div class="one">音乐</div>
+        <div class="iconfont geren "></div>
+    </div>
+</header>
+
+<div class="box" id="wrapper">
+    <div id="scroller">
+        <div class="music_img">
+            <img src="img/music_bg.jpg" alt="">
+        </div>
+        <div class="singer">
+            <div class="touxiang">
+                <div class="head">
+                    <img src="img/head.jpg" alt="">
+                </div>
+                <div class="name">Rosie Thomas</div>
+                <br>
+                <div class="jies">美国民谣歌手</div>
+            </div>
+            <div class="geming">Say Hello</div>
+            <div class="audio_">
+
+            </div>
+
+        </div>
+
+        <div class="m_story">
+            <div class="s_title">
+                音乐故事
+            </div>
+            <div class="m_title">吾友张柏芝</div>
+            <div class="m_writer">月亮石</div>
+            <div class="m_con">
+                <p>
+                    去年夏天在医院，他抱着一只中华田园猫过来跟我说，你好，我好像见过你。事情就在那时候发生了。但回头想想，也可能所有所有的故事，从来就没有发生过，我不确定。<br><br>
+                    1，<br>
+                    从医院出来，路旁草木茂密，有风，我们就这么走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，走着，
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    
+</div>
+
+
+<footer id="foot">
+    <a href="index.home.html">
+        <div class="iconfont home">
+            <span>首页</span>
+        </div>
+    </a>
+    <a href="index.reading.html">
+        <div class="iconfont icon02">
+            <span>阅读</span>
+        </div>
+    </a>
+    <a href="index.music.htmlx.">
+        <div class="iconfont music" style="color:#85ADD6;">
+            <span>音乐</span>
+        </div>
+    </a>
+    <a href="index.movie.html">
+        <div class="iconfont movie">
+            <span>电影</span>
+        </div>
+    </a>
+</footer>
+</body>
+
+
+<script>
+    var width=document.documentElement.clientWidth;
+    var height=document.documentElement.clientHeight;
+    var scale;
+    function resize(originsize,type){
+        var type=type || "x";
+        if(type=="x"){
+            scale=width/originsize*100;
+        }
+        else if(type=="y"){
+            scale=height/originsize*100;
+        }
+        document.getElementsByTagName("html")[0].style.fontSize=scale+"px";
+
+    }
+
+    resize(750,"x")
+    myScroll = new IScroll('#wrapper', { mouseWheel: true });
+</script>
+</html>

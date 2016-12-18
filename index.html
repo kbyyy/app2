@@ -3,74 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/mui.css">
+    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/font/iconfont.css">
     <script src="js/jquery.js"></script>
-    <script src="js/mui.min.js"></script>
-    <link href="js/mui.min.css" rel="stylesheet"/>
     <script src="js/iscroll.js"></script>
-    <script src="js/zepto.min.js"></script>
+    <script src="js/swiper.animate1.0.2.min.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/zepto.js"></script>
 </head>
+<style>
+    .swiper-container,.swiper-wrapper,.swiper-slide{
+        width: 100%;height: 100%;
+    }
+    .shan1{
+        width: 100%;height: 100%;
+        margin-top: 4rem;
+        text-align: center;
+    }
+    .shan1 img{
+        height: 3.72rem;
+    }
+    .shan1 p{
+        font-size: 0.24rem;
+    }
+</style>
 <body>
-<div class="top">
-    <!--<img src="img/top.jpg" alt="">-->
-</div>
-<div class="wrapper">
-    <div class="nav">
-        <div class="nav_l" style="padding-left:0.5rem">每日精选</div>
-        <!--<div class="nav_r">+</div>-->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="shan1">
+                <img src="img/shan1.jpg" alt="">
+                <p>阅 读 &nbsp;·&nbsp; 美 好</p>
+            </div>
+
+        </div>
+        <div class="swiper-slide">
+            <div class="shan1">
+                <img src="img/shan2.jpg" alt="">
+                <p>音 乐 &nbsp;·&nbsp; 故 事</p>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="shan1">
+                <img src="img/shan3.jpg" alt="">
+                <p>电影 &nbsp;·&nbsp; 态 度</p>
+                <a href="index.home.html">
+                    <div class="jinru">
+                        点击进入
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <!--<div class="swiper-slide">-->
+            <!--<div class="shan1">-->
+                <!--<img src="img/shan1.jpg" alt="">-->
+
+            <!--</div>-->
+        <!--</div>-->
 
     </div>
-    <a href="index.detail.html" class="lt1">
-        <!--<img src="img/s1.jpg" alt="">-->
-    </a>
-    <div class="con">
-        <a href="index.detail.html" class="lt2">
-            <div class="timu">
-                年终会员回馈百款商品特价,新老会员都有机会获得
-                <p>堆糖商店</p>
-            </div>
-            <div class="tup">
-
-            </div>
-
-        </a>
-    </div>
-
-    <div class="con">
-        <a href="index.detail.html" class="lt2">
-            <div class="timu">
-                生活之美，落于微末
-                <p>堆糖商店</p>
-            </div>
-            <div class="tup tup2">
-
-            </div>
-
-        </a>
-    </div>
-
-    <div class="con">
-        <a href="index.detail.html" class="lt2">
-            <div class="timu">
-                生活之美，落于微末
-                <p>堆糖商店</p>
-            </div>
-            <div class="tup tup2">
-
-            </div>
-
-        </a>
-    </div>
+    <div class="swiper-pagination"></div>
 </div>
 
-<div class="footer">
-    <a href="find.index.html">首页</a>
-    <a href="find.index.html">商店</a>
-    <a href="find.index.html">发现</a>
-    <a href="find.index.html">我</a>
-
-</div>
 </body>
+
 <script>
     var width=document.documentElement.clientWidth;
     var height=document.documentElement.clientHeight;
@@ -86,6 +88,10 @@
         document.getElementsByTagName("html")[0].style.fontSize=scale+"px";
 
     }
-    resize(750,"x")
+    resize(1334,"y")
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
 </script>
 </html>

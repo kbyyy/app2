@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/mui.css">
+
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/font/iconfont.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/iscroll.js"></script>
+    <script src="js/swiper.animate1.0.2.min.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/zepto.js"></script>
+</head>
+<body style="background: white">
+<header id="header">
+    <!--<div class="top"></div>-->
+    <div class="nav">
+        <div class="iconfont search"></div>
+        <div class="one">阅读</div>
+        <div class="iconfont geren "></div>
+    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/swiper1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/swiper2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/swiper1.jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+</header>
+<div class="box" id="wrapper">
+    <div id="scroller">
+        <div class="read_box">
+
+            <div class="read_con">
+                <a href="read.detail.html">
+                    <span>人人人</span>
+                    <p>凉祈</p>
+
+                    <p>
+                        如果我再不杀人，整条街的气氛就太过欢愉了，事实证明——人民的心情越是流于表面的欢愉，就越是容易在暗处堆叠傲慢与偏见。
+                    </p>
+                </a>
+            </div>
+
+            <div class="read_con">
+                <a href="read.detail.html">
+                    <span>灰猫奇异事务所</span>
+                    <p>康夫</p>
+                    <p>
+                        一想到自己生活早这么恢弘的城市，而且正深夜开着破旧的金杯车在重要的街道上飞驰，不真实的奇妙感又涌上来了。
+                    </p>
+                </a>
+            </div>
+
+            <div class="read_con">
+                <a href="read.detail.html">
+                    <span>人人人</span>
+                    <p>凉祈</p>
+                    <p>
+                        如果我再不杀人，整条街的气氛就太过欢愉了，事实证明——人民的心情越是流于表面的欢愉，就越是容易在暗处堆叠傲慢与偏见。
+                    </p>
+                </a>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<footer id="foot">
+    <a href="index.home.html">
+        <div class="iconfont home">
+            <span>首页</span>
+        </div>
+    </a>
+    <a href="index.reading.html">
+        <div class="iconfont icon02" style="color:#85ADD6;" >
+            <span>阅读</span>
+        </div>
+    </a>
+    <a href="index.music.html">
+        <div class="iconfont music">
+            <span>音乐</span>
+        </div>
+    </a>
+    <a href="index.movie.html">
+        <div class="iconfont movie">
+            <span>电影</span>
+        </div>
+    </a>
+</footer>
+</body>
+
+<script>
+    var width=document.documentElement.clientWidth;
+    var height=document.documentElement.clientHeight;
+    var scale;
+    function resize(originsize,type){
+        var type=type || "x";
+        if(type=="x"){
+            scale=width/originsize*100;
+        }
+        else if(type=="y"){
+            scale=height/originsize*100;
+        }
+        document.getElementsByTagName("html")[0].style.fontSize=scale+"px";
+
+    }
+    resize(750,"x")
+
+    myScroll = new IScroll('#wrapper', { mouseWheel: true ,click:true});
+    var swiper=new Swiper(".swiper-container");
+</script>
+</html>
